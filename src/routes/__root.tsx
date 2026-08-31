@@ -15,12 +15,11 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "Ali Hussein — Web developer",
+        title: "Ali Hussein - Design Engineer",
       },
       {
         name: "description",
-        content:
-          "Web developer building thoughtful products with a focus on UX and solid engineering.",
+        content: "AI-native engineer based in Hamburg, Germany.",
       },
     ],
     links: [

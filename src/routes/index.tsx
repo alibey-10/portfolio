@@ -11,26 +11,24 @@ const projects = [
     description: "Shadcn search engine",
   },
   {
+    name: "Formcn",
+    href: "https://formcn.dev",
+    description: "Production-ready shadcn UI form builder",
+  },
+  {
     name: "Cardcn",
     href: "https://cardcn.dev",
     description: "Collection of shadcn cards",
   },
   {
-    name: "Formcn",
-    href: "https://formcn.dev",
-    description: "Build production-ready forms with shadcn, and React and Zod",
-  },
-  {
     name: "Nextradar",
     href: "https://nextradar.dev/",
-    description:
-      "Curated news, tools, courses, and jobs for the Next.js ecosystem.",
+    description: "Curated resources for Next.js",
   },
   {
     name: "Indie UI",
     href: "https://ui.indie-starter.dev/",
-    description:
-      "A library of UI building blocks for shipping interfaces quickly.",
+    description: "Collection of UI blocks",
   },
 ] as const
 
@@ -43,7 +41,7 @@ const links = [
     href: "https://www.linkedin.com/in/%F0%9F%92%BB-ali-h-4292a6156/",
   },
   {
-    label: "ShadCord",
+    label: "Discord",
     href: "https://shoogle.dev/shadcord",
   },
 ] as const
@@ -53,24 +51,23 @@ function App() {
     <div className="mx-auto flex min-h-svh max-w-2xl flex-col px-6 leading-relaxed text-foreground">
       <header className="mb-14 pt-10 md:pt-14">
         <h1
-          className="text-2xl font-bold tracking-tight md:text-3xl"
+          className="font-bold tracking-tight uppercase"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           Ali Hussein
         </h1>
-        <p className="mt-2 text-pretty text-muted-foreground">
-          Self-taught web developer, UX-driven engineer, and open source
-          contributor.
+        <p className="mt-2 text-lg leading-tight font-medium text-pretty text-muted-foreground">
+          AI-native design engineer based in Hamburg, Germany.
         </p>
       </header>
 
       <section aria-labelledby="projects-heading" className="mb-14">
         <h2
           id="projects-heading"
-          className="mb-3 text-lg font-medium uppercase"
+          className="mb-3 font-bold tracking-tight"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          Open Source
+          I built
         </h2>
         <ul className="flex flex-col gap-4">
           {projects.map((p) => (
